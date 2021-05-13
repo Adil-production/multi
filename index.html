@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #input{
+            border-radius: 50px;
+            border: solid 0.4px;
+            width: 250px;
+            height: 25px;
+        }
+        .text{
+            font-size: 30px;
+            color: #707070;
+        }
+        #execute{
+           padding: 6px;
+            width: 200px; 
+            color: white;
+            background-color: #024A00;
+            border-radius: 50px;
+            border: none;
+            font-size: 20px;
+            position: absolute;
+    bottom: 25px;
+    transform: translateX(-50%);
+        }
+        body{
+            background-image: url("back.png");
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div align="center">
+        <h2 style="color : #707070">الضرب من 1 الى 10</h2>
+        <br>
+        <input type="text" id="input" />
+        <br>
+        <br>
+       
+        <span id="one" class="text">..</span><span class="text"> x </span> <span class="text">1</span> <span class="text"> = </span> <span id="ans-one" class="text">..</span>
+        <br>
+        <br>
+        <span id="two" class="text">..</span><span class="text"> x </span> <span class="text">2</span> <span class="text"> = </span> <span id="ans-two" class="text">..</span>
+        <br>
+        <br>
+        <span id="three" class="text">..</span><span class="text"> x </span> <span class="text">3</span> <span class="text"> = </span> <span id="ans-three" class="text">..</span>
+        <br>
+        <br>
+        <span id="four" class="text">..</span><span class="text"> x </span> <span class="text">4</span> <span class="text"> = </span> <span id="ans-four" class="text">..</span>
+        <br>
+        <br>
+        <span id="five" class="text">..</span><span class="text"> x </span> <span class="text">5</span> <span class="text"> = </span> <span id="ans-five" class="text">..</span>
+        <br>
+        <br>
+        <span id="six" class="text">..</span><span class="text"> x </span> <span class="text">6</span> <span class="text"> = </span> <span id="ans-six" class="text">..</span>
+        <br>
+        <br>
+        <span id="seven" class="text">..</span><span class="text"> x </span> <span class="text">7</span> <span class="text"> = </span> <span id="ans-seven" class="text">..</span>
+        <br>
+        <br>
+        <span id="eight" class="text">..</span><span class="text"> x </span> <span class="text">8</span> <span class="text"> = </span> <span id="ans-eight" class="text">..</span>
+        <br>
+        <br>
+        <span id="nine" class="text">..</span><span class="text"> x </span> <span class="text">9</span> <span class="text"> = </span> <span id="ans-nine" class="text">..</span>
+        <br>
+        <br>
+        <span id="ten" class="text">..</span><span class="text"> x </span> <span class="text">10</span> <span class="text"> = </span> <span id="ans-ten" class="text">..</span>
+    </div>
+    
+    <div align="center">
+        
+        <button onclick="execute()" id="execute">تحليل</button>
+    </div>
+    <script>
+        function execute(){
+            if(Number(document.getElementById("input")) > 10){
+                document.write("nopppp");
+            }
+            //one
+            document.getElementById("one").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-one").innerHTML = Number(document.getElementById("input").value) * 1;
+            //one
+
+            //two
+            document.getElementById("two").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-two").innerHTML = Number(document.getElementById("input").value) * 2;
+            //two
+
+            //three
+            document.getElementById("three").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-three").innerHTML = Number(document.getElementById("input").value) * 3;
+            //three
+
+            //four
+            document.getElementById("four").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-four").innerHTML = Number(document.getElementById("input").value) * 4;
+            //four
+
+            //five
+            document.getElementById("five").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-five").innerHTML = Number(document.getElementById("input").value) * 5;
+            //five
+
+            //six
+            document.getElementById("six").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-six").innerHTML = Number(document.getElementById("input").value) * 6;
+            //six
+
+            //seven
+            document.getElementById("seven").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-seven").innerHTML = Number(document.getElementById("input").value) * 7;
+            //seven
+
+            //eight
+            document.getElementById("eight").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-eight").innerHTML = Number(document.getElementById("input").value) * 8;
+            //eight
+
+            //nine
+            document.getElementById("nine").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-nine").innerHTML = Number(document.getElementById("input").value) * 9;
+            //nine
+
+            //ten
+            document.getElementById("ten").innerHTML = document.getElementById("input").value;
+            document.getElementById("ans-ten").innerHTML = Number(document.getElementById("input").value) * 10;
+            //ten
+        }
+    </script>
+</body>
+</html>
